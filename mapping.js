@@ -21,7 +21,13 @@ var mappings =
     18: "straight_cross",
     19: "mojang",
     20: "gradient",
-    21: "gradient_up"
+    21: "gradient_up",
+    22: "circle",
+    23: "half_horizontal",
+    24: "half_horizontal_bottom",
+    25: "stripe_top",
+    26: "stripe_bottom",
+    27: "border"
 };
 
 function getRawId(id) {

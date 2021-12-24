@@ -103,12 +103,39 @@ svg_map["gradient"] = `<svg height="200" width="100">
   <polygon points="0,0 100,0 100,200 0,200" stroke-width="4" fill=url(#gradient) />
   </svg>`
 
-  svg_map["gradient_up"] = `<svg height="200" width="100">
+svg_map["gradient_up"] = `<svg height="200" width="100">
 <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
-      <stop offset="100%" style="stop-color:?;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <polygon points="0,0 100,0 100,200 0,200" stroke-width="4" fill=url(#gradient) />
-  </svg>`
+   <linearGradient id="gradient-up" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+    <stop offset="100%" style="stop-color:?;stop-opacity:1" />
+ </linearGradient>
+</defs>
+<polygon points="0,0 100,0 100,200 0,200" stroke-width="4" fill=url(#gradient-up) />
+</svg>`
+
+svg_map["circle"] = `<svg width="100" height="200">
+<circle cx="50" cy="100" r="30" fill="?" />
+</svg>`;
+
+svg_map['half_horizontal'] = `<svg width="100" height="200">
+<polygon points="0, 0 0, 100 100, 100 100, 0" stroke-width="4" fill="?" />
+</svg>`;
+
+svg_map['half_horizontal_bottom'] = `<svg width="100" height="200">
+<polygon points="0, 200 0, 100 100, 100 100, 200" stroke-width="4" fill="?" />
+</svg>`;
+
+svg_map['stripe_top'] = `<svg width="100" height="200">
+<polygon points="0, 0 0, 70 100, 70 100, 0" stroke-width="4" fill="?" />
+</svg>`;
+
+svg_map['stripe_bottom'] = `<svg width="100" height="200">
+<polygon points="0,200 0,130 100,130 100,200" stroke-width="4" fill="?" />
+</svg>`;
+
+svg_map['border'] = `<svg width="100" height="200">
+<polygon points="0,0 15,0 15,200 0,200" stroke-width="4" fill="?" />
+<polygon points="100,0 85,0 85,200 100,200" stroke-width="4" fill="?" />
+<polygon points="0,0 0,15 100,15 100,0" stroke-width="4" fill="?" />
+<polygon points="0,200 0,185 100,185 100,200" stroke-width="4" fill="?" />
+</svg>`;
