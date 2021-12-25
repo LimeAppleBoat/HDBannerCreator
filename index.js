@@ -34,7 +34,6 @@ function createImg(color, img) {
     url.search = params.toString();
     console.log(url, params, encodePatterns())
     data.value = url.toString();
-    console.log("DONE")
 }
 function initConfig() {
     genOptions(getLangFromLocalStorage());

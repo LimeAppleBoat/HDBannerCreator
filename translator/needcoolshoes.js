@@ -1,7 +1,9 @@
-var base64dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/",
-  _color = "black",
-  _patterns = ["base", "bl", "bo", "br", "bri", "bs", "bt", "bts", "cbo", "cr", "cre", "cs", "dls", "drs", "flo", "gra", "hh", "ld", "ls", "mc", "moj", "mr", "ms", "rd", "rs", "sc", "sku", "ss", "tl", "tr", "ts", "tt", "tts", "vh", "lud", "rud", "gru", "hhb", "vhr"],
-  _colors = {
+class NeedCoolShoesTranslator{
+  constructor() {
+    this.base64dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/",
+  this._color = "black",
+  this._patterns = ["base", "bl", "bo", "br", "bri", "bs", "bt", "bts", "cbo", "cr", "cre", "cs", "dls", "drs", "flo", "gra", "hh", "ld", "ls", "mc", "moj", "mr", "ms", "rd", "rs", "sc", "sku", "ss", "tl", "tr", "ts", "tt", "tts", "vh", "lud", "rud", "gru", "hhb", "vhr"],
+  this._colors = {
     black: 0,
     red: 1,
     green: 2,
@@ -9,8 +11,8 @@ var base64dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
     blue: 4,
     purple: 5,
     cyan: 6,
-    gray: 7,
-    dark_gray: 8,
+    light_gray: 7,
+    gray: 8,
     pink: 9,
     lime: 10,
     yellow: 11,
@@ -19,8 +21,8 @@ var base64dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
     orange: 14,
     white: 15
   },
-  _colorsInv = ["black", "red", "green", "brown", "blue", "purple", "cyan", "gray", "dark_gray", "pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"],
-  _crafting = {
+  this._colorsInv = ["black", "red", "green", "brown", "blue", "purple", "cyan", "gray", "dark_gray", "pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"],
+  this._crafting = {
     base: [1, 1, 1, 1, 1, 1, "", "stick", ""],
     gra: [1, "bn", 1, "", 1, "", "", 1, ""],
     bri: ["", "", "", "", "bn", 1, "", "brick", ""],
@@ -61,47 +63,47 @@ var base64dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
     hhb: ["", "bn", "", 1, 1, 1, 1, 1, 1],
     vhr: ["", 1, 1, "bn", 1, 1, "", 1, 1]
   };
-base = "base",
-  bl = "bl",
-  bo = "bo",
-  br = "br",
-  bri = "bri",
-  bs = "bs",
-  bt = "bt",
-  bts = "bts",
-  cbo = "cbo",
-  cr = "cr",
-  cre = "cre",
-  cs = "cs",
-  dls = "dls",
-  drs = "drs",
-  flo = "flo",
-  gra = "gra",
-  hh = "hh",
-  ld = "ld",
-  ls = "ls",
-  mc = "mc",
-  moj = "moj",
-  mr = "mr",
-  ms = "ms",
-  rd = "rd",
-  rs = "rs",
-  sc = "sc",
-  sku = "sku",
-  ss = "ss",
-  tl = "tl",
-  tr = "tr",
-  ts = "ts",
-  tt = "tt",
-  tts = "tts",
-  vh = "vh",
-  lud = "lud",
-  rud = "rud",
-  gru = "gru",
-  hhb = "hhb",
-  vhr = "vhr"
+this.base = "base",
+  this.bl = "bl",
+  this.bo = "bo",
+  this.br = "br",
+  this.bri = "bri",
+  this.bs = "bs",
+  this.bt = "bt",
+  this.bts = "bts",
+  this.cbo = "cbo",
+  this.cr = "cr",
+  this.cre = "cre",
+  this.cs = "cs",
+  this.dls = "dls",
+  this.drs = "drs",
+  this.flo = "flo",
+  this.gra = "gra",
+  this.hh = "hh",
+  this.ld = "ld",
+  this.ls = "ls",
+  this.mc = "mc",
+  this.moj = "moj",
+  this.mr = "mr",
+  this.ms = "ms",
+  this.rd = "rd",
+  this.rs = "rs",
+  this.sc = "sc",
+  this.sku = "sku",
+  this.ss = "ss",
+  this.tl = "tl",
+  this.tr = "tr",
+  this.ts = "ts",
+  this.tt = "tt",
+  this.tts = "tts",
+  this.vh = "vh",
+  this.lud = "lud",
+  this.rud = "rud",
+  this.gru = "gru",
+  this.hhb = "hhb",
+  this.vhr = "vhr"
 
-var patternIds = {
+this.patternIds = {
   "base": "base",
   "b": "base",
   "bl": "square_bottom_left",
@@ -145,7 +147,7 @@ var patternIds = {
   "moj": "mojang",
   "pig": "piglin",
 }
-var colors = {
+this.colors = {
   "white": "#f9fffe",
   "orange": "#f9801d",
   "magenta": "#c74ebd",
@@ -163,76 +165,82 @@ var colors = {
   "red": "#b02e26",
   "black": "#1d1d21"
 }
+  }
 
-function encPair(a, b) {
+
+
+encPair(a, b) {
   b = _patterns.indexOf(b);
   var c = b >> 6 << 4 | 15 & a,
     d = 63 & b;
   return base64dict[c] + base64dict[d]
 }
 
-function decPair(a) {
-  var b = base64dict.indexOf(a.charAt(0)),
-    c = base64dict.indexOf(a.charAt(1)),
+decPair(a) {
+  var b = this.base64dict.indexOf(a.charAt(0)),
+    c = this.base64dict.indexOf(a.charAt(1)),
     d = 15 & b,
-    e = _patterns[b >> 4 << 6 | c];
+    e = this._patterns[b >> 4 << 6 | c];
   return [d, e]
 }
 
 
-function decPairs(va) {
+decPairs(va) {
   const a = [];
   const q = va
   const b = q.match(/.{2}/g)
   for (let i = 0; i < b.length; i++) {
-    a[i] = decPair(b[i]);
+    a[i] = this.decPair(b[i]);
   }
   return a;
 }
 
-function translate(array) {
+translate(array) {
   const z = []
   for (let i = 0; i < array.length; i++) {
     const e = array[i];
     //console.log(e);
     //console.log(decodeColor(e[0]) + ", " + decodePattern(e[1]));
     z[i] = []
-    z[i][0] = decodeColor(e[0])
-    z[i][1] = decodePattern(e[1]);
+    z[i][0] = this.decodeColor(e[0])
+    z[i][1] = this.decodePattern(e[1]);
   }
   return z;
 }
 
-function decodeColor(color) {
-  return getCol(color);
+decodeColor(color) {
+  return this.getCol(color);
 }
 
-function decodePattern(pattern) {
-  return patternIds[pattern];
+decodePattern(pattern) {
+  return this.patternIds[pattern];
 }
 
-function getCol(color) {
-  for (const [key, value] of Object.entries(_colors)) {
+getCol(color) {
+  for (const [key, value] of Object.entries(this._colors)) {
     if (value == color) return key;
   }
+  console.log("FAILED")
   return "black"
 }
 
-function getColor(col) {
-  return colors[col] != null ? colors[col] : "#000000"
+getColor(col) {
+  if (this.colors[col] == null)console.log(`${col} failed`)
+  return this.colors[col] != null ? this.colors[col] : "#000000"
 }
 
-function createConvertableStrings(v) {
-  return translate(decPairs(v))
+createConvertableStrings(v) {
+  return this.translate(this.decPairs(v))
 }
 
-function convertAndEncode(convertableStrings) {
+convertAndEncode(convertableStrings) {
   let encodedPattern = "";
   for (let e = 0; e < convertableStrings.length; e++) {
     var temp = "";
     temp = temp + getThreeDigitNumber(getRawId(convertableStrings[e][1]));
-    temp = temp + getColor(convertableStrings[e][0]);
+    temp = temp + this.getColor(convertableStrings[e][0]);
     encodedPattern = encodedPattern + temp;
   }
   return encodedPattern;
+}
 }
