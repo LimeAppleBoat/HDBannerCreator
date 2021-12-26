@@ -2,7 +2,7 @@ var mappings =
 {
     0: "base",
     1: "diagonal_up_left",
-    2: "diagonal_up_right",
+    2: "diagonal_right",
     3: "triangle_top",
     4: "triangle_bottom",
     5: "rhombus",
@@ -27,12 +27,15 @@ var mappings =
     24: "half_horizontal_bottom",
     25: "stripe_top",
     26: "stripe_bottom",
-    27: "border"
+    27: "border",
+    28: "diagonal_left",
+    29: "diagonal_up_right"
 };
 
+mappings[999] = "empty";
 function getRawId(id) {
     for (const [key, value] of Object.entries(mappings)) {
         if (id == value) return key;
     }
-    return 0;
+    return 999;
 }

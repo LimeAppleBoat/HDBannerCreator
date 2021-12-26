@@ -58,6 +58,7 @@ function genOptions(lang) {
         const op = document.createElement("option");
         op.id = "key-" + key;
         op.innerHTML = getLang(value, lang);
+        if (key == 999) return;
         document.getElementById("banner-type").append(op);
     }
 }

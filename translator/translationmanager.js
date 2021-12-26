@@ -6,6 +6,7 @@ function doTranslationPrompt(val) {
         let params = new URLSearchParams(url.search);
         //Add a third parameter.
         params.set('patterns', z.convertAndEncode(z.createConvertableStrings(a)));
+        console.log(z.createConvertableStrings(a));
         url.search = params.toString();
         //console.log(url, params, createConvertableStrings(a))
         document.getElementById("converted").value = url.toString();

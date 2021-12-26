@@ -21,7 +21,7 @@ class NeedCoolShoesTranslator{
     orange: 14,
     white: 15
   },
-  this._colorsInv = ["black", "red", "green", "brown", "blue", "purple", "cyan", "gray", "dark_gray", "pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"],
+  this._colorsInv = ["black", "red", "green", "brown", "blue", "purple", "cyan", "light_gray", "gray", "pink", "lime", "yellow", "light_blue", "magenta", "orange", "white"],
   this._crafting = {
     base: [1, 1, 1, 1, 1, 1, "", "stick", ""],
     gra: [1, "bn", 1, "", 1, "", "", 1, ""],
