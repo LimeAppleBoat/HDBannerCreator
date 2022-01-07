@@ -29,7 +29,8 @@ var mappings =
     26: "stripe_bottom",
     27: "border",
     28: "diagonal_left",
-    29: "diagonal_up_right"
+    29: "diagonal_up_right",
+    30: "curly_border"
 };
 
 mappings[999] = "empty";

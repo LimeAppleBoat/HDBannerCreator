@@ -150,3 +150,14 @@ svg_map["diagonal_left"] = `<svg width="100" height="200">
 svg_map["diagonal_right"] = `<svg width="100" height="200">
 <polygon points="0, 200 100, 200 100, 0" fill="?" />
 </svg>`;
+
+svg_map["curly_border"] = `<svg width="100" height="200">
+<polygon points="50,0 0,0 0, 50" fill="?"></polygon>
+<polygon points="50,0 100,0 100,50" fill="?"></polygon>
+<polygon points="0,50 25, 75 0,100" fill="?"></polygon>
+<polygon points="0,100 25,125, 0,150" fill="?"></polygon>
+<polygon points="50,200 0,200 0,150" fill="?"></polygon>
+<polygon points="100,200 50,200 100,150" fill="?"></polygon>
+<polygon points="100,50 75, 75 100,100" fill="?"></polygon>
+<polygon points="100,100 75,125, 100,150" fill="?"></polygon>
+</svg>`;
