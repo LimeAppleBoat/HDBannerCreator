@@ -33,6 +33,8 @@ function doTranslationPrompt(val) {
             url.search = params.toString();
             //console.log(url, params, createConvertableStrings(a))
             ryukvgdmf = url;
+    } else if (val == "planetminecraft") {
+        alert("This translator is still a WIP!");
     } else {
         alert("NO TRANSLATOR FOR \"" + val + "\".");
     }
