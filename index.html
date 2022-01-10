@@ -14,8 +14,9 @@
             <input type="button" onclick="addPattern()" value="Add">
             <input type="button" onclick="mergeSvg()" value="Download"><br>
             <input type="text" readonly="true" id="data" style="width:700px"/><br/>
-            <input type="button" onclick="doTranslationPrompt('needcoolshoes')"/>
-            <input type="text" readonly="true" id="converted" style="width:700px"/><br/>
+            <input type="button" onclick="doTranslationPrompt('needcoolshoes')" value="Need Cool Shoes Converter"/>
+            <input type="button" onclick="doTranslationPrompt('planetminecraft')" value="Planet Minecraft Converter" disabled/>
+            <input type="button" onclick="doTranslationPrompt('minecrafttools')" value="Minecraft Tools Converter"/>
         </div>
         <canvas id="canvas" width="200px" height="100px"></canvas>
         <script src="html2canvas.js"></script>
@@ -23,6 +24,7 @@
         <script src="assets/lang/en_au.js"></script>
         <script src="assets/lang/sorter.js"></script>
         <script src="index.js"></script>
+        <script src="translator/minecrafttools.js"></script>
         <script src="translator/needcoolshoes.js"></script>
         <script src="translator/translationmanager.js"></script>
         <script>init();</script>

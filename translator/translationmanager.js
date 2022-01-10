@@ -1,14 +1,42 @@
+function triggerTranslationPrompt() {
+    doTranslationPrompt(prompt("Enter a banner format", "needcoolshoes"))
+}
+
+
 function doTranslationPrompt(val) {
-    const z = new NeedCoolShoesTranslator();
-    const a = prompt("TO CONVERT");
-    if (a != null) {
+    let ryukvgdmf = null;
+    if (val == "needcoolshoes") {
+        const z = new NeedCoolShoesTranslator();
+        let a = prompt("Convert from Need Cool Shoes");
+        a = a.split("?=").length > 1 ? a.split("?=")[1] : a;
+        a = a.split("#")[0];
+        if (a != null) {
+            let url = new URL(document.URL);
+            let params = new URLSearchParams(url.search);
+            //Add a third parameter.
+            params.set('patterns', z.convertAndEncode(z.createConvertableStrings(a)));
+            console.log(z.createConvertableStrings(a));
+            url.search = params.toString();
+            //console.log(url, params, createConvertableStrings(a))
+            ryukvgdmf = url;
+        }
+    } else if (val == "minecrafttools") {
+        const z = new MinecraftToolsTranslator();
+        let a = prompt("Convert from Minecraft Tools");
+        a = a.split("?").length > 1 ? "?" + a.split("?")[1] : "?" + a;
+        a = a.split("#")[0];
         let url = new URL(document.URL);
-        let params = new URLSearchParams(url.search);
-        //Add a third parameter.
-        params.set('patterns', z.convertAndEncode(z.createConvertableStrings(a)));
-        console.log(z.createConvertableStrings(a));
-        url.search = params.toString();
-        //console.log(url, params, createConvertableStrings(a))
-        document.getElementById("converted").value = url.toString();
+            let params = new URLSearchParams(url.search);
+            //Add a third parameter.
+            params.set('patterns', z.convert(a));
+            console.log(z.convert(a))
+            url.search = params.toString();
+            //console.log(url, params, createConvertableStrings(a))
+            ryukvgdmf = url;
+    } else {
+        alert("NO TRANSLATOR FOR \"" + val + "\".");
+    }
+    if (ryukvgdmf != null) {
+        location.href = ryukvgdmf;
     }
 }
