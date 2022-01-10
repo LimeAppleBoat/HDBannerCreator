@@ -11,7 +11,7 @@ svg_map["diagonal_up_left"] = `<svg width="100" height="200">
 <polygon points="0, 0 0, 200 100, 200" fill="?" />
 </svg>`;
 
-svg_map["diagonal_up_right"] = `<svg width="100" height="200">
+svg_map["diagonal_right"] = `<svg width="100" height="200">
 <polygon points="100, 0 0, 0 0, 200" fill="?" />
 </svg>`;
 
@@ -147,7 +147,7 @@ svg_map["diagonal_left"] = `<svg width="100" height="200">
 <polygon points="0, 0 0, 200 100, 0" fill="?" />
 </svg>`;
 
-svg_map["diagonal_right"] = `<svg width="100" height="200">
+svg_map["diagonal_up_right"] = `<svg width="100" height="200">
 <polygon points="0, 200 100, 200 100, 0" fill="?" />
 </svg>`;
 
