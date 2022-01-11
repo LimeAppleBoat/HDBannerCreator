@@ -68,11 +68,11 @@ svg_map["small_stripes"] = `<svg width="100" height="200">
 <polygon points="80,0 95,0 95,200 80,200" fill="?" />
 </svg>`;
 
-svg_map["stripe_downleft"] = `<svg width="100" height="200">
+svg_map["stripe_downright"] = `<svg width="100" height="200">
 <polygon points="20,0 0,0 0,40 80,200 100,200 100,160" fill="?" />
 </svg>`;
 
-svg_map["stripe_downright"] = `<svg width="100" height="200">
+svg_map["stripe_downleft"] = `<svg width="100" height="200">
 <polygon points="80,0 100,0 100,40 20,200 0,200 0,160" fill="?" />
 </svg>`;
 
@@ -161,3 +161,33 @@ svg_map["curly_border"] = `<svg width="100" height="200">
 <polygon points="100,50 75, 75 100,100" fill="?"></polygon>
 <polygon points="100,100 75,125, 100,150" fill="?"></polygon>
 </svg>`;
+
+svg_map["cross"] = `<svg width="100" height="200">
+<polygon points="15,0 0,0 0,30 85,200 100,200 100,170" fill="?"></polygon>
+<polygon points="85,0 100,0 100,30 15,200 0,200 0,170" fill="?"></polygon>
+</svg>`;
+
+svg_map["piglin"] = `<svg width="100" height="200">
+<polygon points="10,80 90,80 90,85 10,85" fill="?"></polygon>
+<polygon points="10,120 90,120 90,125 10,125" fill="?"></polygon>
+<polygon points="10,85 15,85 15,120 10,120" fill="?"></polygon>
+<polygon points="90,85 85,85 85,120 90,120" fill="?"></polygon>
+<polygon points="30,90 30,115 40,115 40,90" fill="?"></polygon>
+<polygon points="70,90 70,115 60,115 60,90" fill="?"></polygon>
+</svg>`
+
+svg_map["square_top_left"] = `<svg width="100" height="200">
+<polygon points="0,0 50,0 50,70 0,70" fill="?"></polygon>
+</svg>`
+
+svg_map["square_top_right"] = `<svg width="100" height="200">
+<polygon points="100,0 50,0 50,70 100,70" fill="?"></polygon>
+</svg>`
+
+svg_map["square_bottom_left"] = `<svg width="100" height="200">
+<polygon points="0,200 50,200 50,130 0,130" fill="?"></polygon>
+</svg>`
+
+svg_map["square_bottom_right"] = `<svg width="100" height="200">
+<polygon points="100,200 50,200 50,130 100,130" fill="?"></polygon>
+</svg>`

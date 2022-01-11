@@ -30,7 +30,13 @@ var mappings =
     27: "border",
     28: "diagonal_left",
     29: "diagonal_up_right",
-    30: "curly_border"
+    30: "curly_border",
+    31: "cross",
+    32: "piglin",
+    33: "square_top_left",
+    34: "square_top_right",
+    35: "square_bottom_left",
+    36: "square_bottom_right"
 };
 
 mappings[999] = "empty";
