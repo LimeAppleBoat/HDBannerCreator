@@ -79,6 +79,13 @@ function regenerateOptions() {
     genOptions(getLangFromLocalStorage());
 }
 
+function loadTranslatableText() {
+    for (var a = 0; a < document.getElementsByClassName("translatable").length; a++) {
+        const _a = document.getElementsByClassName("translatable")[a];
+        _a.innerText = getLang(_a.innerText, getLangFromLocalStorage());
+    }
+}
+
 function mergeSvg() {
     html2canvas(banner).then(function(canvas2) {
             theCanvas = canvas2;
@@ -123,6 +130,7 @@ function getId(id) {
 function init() {
     initConfig();
     regenerateOptions();
+    loadTranslatableText();
 }
 function getThreeDigitNumber(num) {
     const temp = num + "";

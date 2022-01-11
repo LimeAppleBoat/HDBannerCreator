@@ -8,7 +8,7 @@ function doTranslationPrompt(val) {
     if (val == "needcoolshoes") {
         const z = new NeedCoolShoesTranslator();
         let a = prompt("Convert from Need Cool Shoes");
-        if (a == null) return;
+        if (a == null || a == "") return;
         a = a.split("?=").length > 1 ? a.split("?=")[1] : a;
         a = a.split("#")[0];
         if (a != null) {
@@ -24,7 +24,7 @@ function doTranslationPrompt(val) {
     } else if (val == "minecrafttools") {
         const z = new MinecraftToolsTranslator();
         let a = prompt("Convert from Minecraft Tools");
-        if (a == null) return;
+        if (a == null || a == "") return;
         a = a.split("?").length > 1 ? "?" + a.split("?")[1] : "?" + a;
         a = a.split("#")[0];
         let url = new URL(document.URL);
@@ -35,8 +35,6 @@ function doTranslationPrompt(val) {
             url.search = params.toString();
             //console.log(url, params, createConvertableStrings(a))
             ryukvgdmf = url;
-    } else if (val == "planetminecraft") {
-        alert("This translator is still a WIP!");
     } else {
         alert("NO TRANSLATOR FOR \"" + val + "\".");
     }
