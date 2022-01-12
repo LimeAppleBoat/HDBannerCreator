@@ -8,7 +8,7 @@ class MinecraftToolsTranslator {
                     4: "square_top_left",
                     5: "square_top_right",
                     6: "half_horizontal",
-                    37: "half_horizontal_right",
+                    37: "half_horizontal_bottom",
                     7: "stripe_bottom",
                     8: "stripe_top",
                     9: "half_vertical",
