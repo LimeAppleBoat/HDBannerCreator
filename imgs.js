@@ -40,11 +40,11 @@ svg_map["stripe_right"] = `<svg width="100" height="200">
 </svg>`;
 
 svg_map["triangles_bottom"] = `<svg width="100" height="200">
-<polygon points="0, 200 16.5, 165 33, 200 50, 165 67, 200 83.5, 165 100, 200" fill="?" />
+<polygon points="0, 200 17.5, 165 33, 200 50, 165 67, 200 82.5, 165 100, 200" fill="?" />
 </svg>`;
 
 svg_map["triangles_top"] = `<svg width="100" height="200">
-<polygon points="0, 0 16.5, 35 33, 0 50, 35 67, 0 83.5, 35 100, 0" fill="?" />
+<polygon points="0, 0 17.5, 35 33, 0 50, 35 67, 0 82.5, 35 100, 0" fill="?" />
 </svg>`;
 
 svg_map["creeper"] = `<svg width="100" height="200">
