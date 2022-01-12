@@ -36,7 +36,8 @@ var mappings =
     33: "square_top_left",
     34: "square_top_right",
     35: "square_bottom_left",
-    36: "square_bottom_right"
+    36: "square_bottom_right",
+    37: "bricks"
 };
 
 mappings[999] = "empty";

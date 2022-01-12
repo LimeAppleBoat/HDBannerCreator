@@ -190,4 +190,47 @@ svg_map["square_bottom_left"] = `<svg width="100" height="200">
 
 svg_map["square_bottom_right"] = `<svg width="100" height="200">
 <polygon points="100,200 50,200 50,130 100,130" fill="?"></polygon>
+</svg>`;
 
+svg_map["bricks"] = `<svg width="100" height="200">
+<rect x="0" y="0" width="25" height="15" fill="?"></rect>
+<rect x="0" y="40" width="25" height="15" fill="?"></rect>
+<rect x="0" y="80" width="25" height="15" fill="?"></rect>
+<rect x="0" y="120" width="25" height="15" fill="?"></rect>
+<rect x="0" y="160" width="25" height="15" fill="?"></rect>
+<rect x="30" y="0" width="25" height="15" fill="?"></rect>
+<rect x="30" y="40" width="25" height="15" fill="?"></rect>
+<rect x="30" y="80" width="25" height="15" fill="?"></rect>
+<rect x="30" y="120" width="25" height="15" fill="?"></rect>
+<rect x="30" y="160" width="25" height="15" fill="?"></rect>
+<rect x="-10" y="20" width="25" height="15" fill="?"></rect>
+<rect x="-10" y="60" width="25" height="15" fill="?"></rect>
+<rect x="-10" y="100" width="25" height="15" fill="?"></rect>
+<rect x="-10" y="140" width="25" height="15" fill="?"></rect>
+<rect x="-10" y="180" width="25" height="15" fill="?"></rect>
+<rect x="60" y="0" width="25" height="15" fill="?"></rect>
+<rect x="60" y="40" width="25" height="15" fill="?"></rect>
+<rect x="60" y="80" width="25" height="15" fill="?"></rect>
+<rect x="60" y="120" width="25" height="15" fill="?"></rect>
+<rect x="60" y="160" width="25" height="15" fill="?"></rect>
+<rect x="90" y="0" width="25" height="15" fill="?"></rect>
+<rect x="90" y="40" width="25" height="15" fill="?"></rect>
+<rect x="90" y="80" width="25" height="15" fill="?"></rect>
+<rect x="90" y="120" width="25" height="15" fill="?"></rect>
+<rect x="90" y="160" width="25" height="15" fill="?"></rect>
+<rect x="20" y="20" width="25" height="15" fill="?"></rect>
+<rect x="20" y="60" width="25" height="15" fill="?"></rect>
+<rect x="20" y="100" width="25" height="15" fill="?"></rect>
+<rect x="20" y="140" width="25" height="15" fill="?"></rect>
+<rect x="20" y="180" width="25" height="15" fill="?"></rect>
+<rect x="50" y="20" width="25" height="15" fill="?"></rect>
+<rect x="50" y="60" width="25" height="15" fill="?"></rect>
+<rect x="50" y="100" width="25" height="15" fill="?"></rect>
+<rect x="50" y="140" width="25" height="15" fill="?"></rect>
+<rect x="50" y="180" width="25" height="15" fill="?"></rect>
+<rect x="80" y="20" width="25" height="15" fill="?"></rect>
+<rect x="80" y="60" width="25" height="15" fill="?"></rect>
+<rect x="80" y="100" width="25" height="15" fill="?"></rect>
+<rect x="80" y="140" width="25" height="15" fill="?"></rect>
+<rect x="80" y="180" width="25" height="15" fill="?"></rect>
+</svg>`;
