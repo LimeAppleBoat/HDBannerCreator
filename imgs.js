@@ -98,22 +98,22 @@ svg_map["mojang"] = `<svg height="200" width="100" viewBox="0 0 1000 1000" prese
 
 svg_map["gradient"] = `<svg height="200" width="100">
 <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="gradient?" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:?;stop-opacity:1" />
       <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
     </linearGradient>
   </defs>
-  <polygon points="0,0 100,0 100,200 0,200" fill=url(#gradient) />
+  <polygon points="0,0 100,0 100,200 0,200" fill=url(#gradient?) />
   </svg>`
 
 svg_map["gradient_up"] = `<svg height="200" width="100">
 <defs>
-   <linearGradient id="gradient-up" x1="0%" y1="0%" x2="0%" y2="100%">
+   <linearGradient id="gradient-up?" x1="0%" y1="0%" x2="0%" y2="100%">
      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
     <stop offset="100%" style="stop-color:?;stop-opacity:1" />
  </linearGradient>
 </defs>
-<polygon points="0,0 100,0 100,200 0,200" fill=url(#gradient-up) />
+<polygon points="0,0 100,0 100,200 0,200" fill=url(#gradient-up?) />
 </svg>`
 
 svg_map["circle"] = `<svg width="100" height="200">
@@ -178,16 +178,16 @@ svg_map["piglin"] = `<svg width="100" height="200">
 
 svg_map["square_top_left"] = `<svg width="100" height="200">
 <polygon points="0,0 50,0 50,70 0,70" fill="?"></polygon>
-</svg>`
+</svg>`;
 
 svg_map["square_top_right"] = `<svg width="100" height="200">
 <polygon points="100,0 50,0 50,70 100,70" fill="?"></polygon>
-</svg>`
+</svg>`;
 
 svg_map["square_bottom_left"] = `<svg width="100" height="200">
 <polygon points="0,200 50,200 50,130 0,130" fill="?"></polygon>
-</svg>`
+</svg>`;
 
 svg_map["square_bottom_right"] = `<svg width="100" height="200">
 <polygon points="100,200 50,200 50,130 100,130" fill="?"></polygon>
-</svg>`
+
